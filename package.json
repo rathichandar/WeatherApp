@@ -1,4 +1,5 @@
 {
+  "homepage": "http://rathichandar.github.io/react-gh-pages",
   "name": "weatherapp",
   "version": "0.1.0",
   "private": true,
@@ -6,16 +7,21 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "bootstrap": "^4.6.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "homepage": "http://rathichandar.github.io/react-gh-pages"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
